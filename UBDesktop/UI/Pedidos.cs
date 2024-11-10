@@ -5,10 +5,10 @@ using UBDesktop.Models;
 
 namespace UBDesktop
 {
-    public partial class Cab : Form
+    public partial class Pedidos : Form
     {
         private readonly APIService apiService;
-        public Cab(APIService apiService)
+        public Pedidos(APIService apiService)
         {
             InitializeComponent();
             this.apiService = apiService;
