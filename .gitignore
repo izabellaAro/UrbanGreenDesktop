@@ -1,0 +1,73 @@
+# Exclui arquivos e pastas gerados pelo Visual Studio
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ide
+
+# Exclui arquivos de build e dependências
+bin/
+obj/
+out/
+**/Debug/
+**/Release/
+
+# Logs
+*.log
+
+# Configurações de IDE locais
+.idea/
+*.sln.iml
+
+# Diretórios de pacotes e dependências
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos de build gerados pelo .NET
+*.dll
+*.exe
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.pri
+*.ipch
+*.pdb
+*.mdb
+*.dbmdl
+*.jfm
+*.class
+
+# Configurações específicas de usuário e de ambiente
+*.config
+*.vsconfig
+*.launchSettings.json
+
+# Arquivos de cache e temporários
+# Rider
+.idea/
+*.sln.iml
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log do Visual Studio
+.vs/*/v15/
+
+# Configurações de build
+.csproj.user
+.vbproj.user
+*.csproj.user
+*.vbproj.user
+*.code-workspace
+
+# Arquivos de publicação
+publish/
+wwwroot/
