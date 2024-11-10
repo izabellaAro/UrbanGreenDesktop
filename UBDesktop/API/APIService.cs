@@ -27,7 +27,7 @@ namespace UBDesktop.API
 
         public async Task<string> LoginAsync(string username, string password)
         {
-            var url = $"{baseUrl}Login/login";
+            var url = $"{baseUrl}Login";
             var loginData = new { nomeUsuario = username, senha = password };
             var content = new StringContent(JsonConvert.SerializeObject(loginData), Encoding.UTF8, "application/json");
 
@@ -55,6 +55,12 @@ namespace UBDesktop.API
         {
             var pedido = await GetAsync("Pedido/listarItens");
             return JsonConvert.DeserializeObject<List<Pedido>>(pedido);
+        }
+
+        public async Task<List<GetFuncionariosResponse>> GetFuncionariosAsync()
+        {
+            var funcionario = await GetAsync("Login/usuarios");
+            return JsonConvert.DeserializeObject<List<GetFuncionariosResponse>>(funcionario);
         }
     }
 }
