@@ -1,21 +1,20 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 using UBDesktop.API;
 using UBDesktop.Models;
 
 namespace UBDesktop
 {
-    public partial class Pedidos : Form
+    public partial class Cab : Form
     {
         private readonly APIService apiService;
-        public Pedidos(APIService apiService)
+        public Cab(APIService apiService)
         {
             InitializeComponent();
             this.apiService = apiService;
         }
 
-        private async void btnCarregar_Click(object sender, EventArgs e)
+        public async void getPedidos()
         {
             var pedidos = await apiService.GetPedidosAsync(); 
 
@@ -95,5 +94,6 @@ namespace UBDesktop
 
             return cardPedido;
         }
+
     }
 }

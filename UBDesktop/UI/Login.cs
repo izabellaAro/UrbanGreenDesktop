@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using UBDesktop.API;
+using UBDesktop.UI;
 
 namespace UBDesktop
 {
@@ -23,9 +24,11 @@ namespace UBDesktop
 
             if (!string.IsNullOrEmpty(token))
             {
+                this.Hide();
                 apiService.SetToken(token);
-                Pedidos form2 = new Pedidos(apiService);
+                Principal form2 = new Principal(apiService);
                 form2.ShowDialog();
+                this.Close();
             }
             else
             {
