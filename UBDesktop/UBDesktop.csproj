@@ -50,7 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\APIService.cs" />
+    <Compile Include="Models\CreateFuncionarioRequest.cs" />
     <Compile Include="Models\GetFuncionariosResponse.cs" />
+    <Compile Include="UI\FormNovoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNovoFuncionario.Designer.cs">
+      <DependentUpon>FormNovoFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +87,9 @@
     <Compile Include="UI\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\FormNovoFuncionario.resx">
+      <DependentUpon>FormNovoFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>
     </EmbeddedResource>

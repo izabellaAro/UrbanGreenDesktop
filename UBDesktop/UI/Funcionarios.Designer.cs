@@ -32,6 +32,7 @@
             this.flpFuncionarios = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAdicionarFunc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,11 +65,24 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Funcionários";
             // 
+            // btnAdicionarFunc
+            // 
+            this.btnAdicionarFunc.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAdicionarFunc.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionarFunc.Location = new System.Drawing.Point(1096, 22);
+            this.btnAdicionarFunc.Name = "btnAdicionarFunc";
+            this.btnAdicionarFunc.Size = new System.Drawing.Size(75, 50);
+            this.btnAdicionarFunc.TabIndex = 3;
+            this.btnAdicionarFunc.Text = "+";
+            this.btnAdicionarFunc.UseVisualStyleBackColor = false;
+            this.btnAdicionarFunc.Click += new System.EventHandler(this.btnAdicionarFunc_Click);
+            // 
             // Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 574);
+            this.Controls.Add(this.btnAdicionarFunc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flpFuncionarios);
@@ -86,5 +100,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpFuncionarios;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAdicionarFunc;
     }
 }

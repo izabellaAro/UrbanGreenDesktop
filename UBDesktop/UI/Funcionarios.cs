@@ -80,5 +80,11 @@ namespace UBDesktop.UI
 
             return card;
         }
+
+        private void btnAdicionarFunc_Click(object sender, System.EventArgs e)
+        {
+            FormNovoFuncionario form = new FormNovoFuncionario(apiService);
+            form.ShowDialog();
+        }
     }
 }
