@@ -67,7 +67,7 @@
             // 
             // btnAdicionarFunc
             // 
-            this.btnAdicionarFunc.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAdicionarFunc.BackColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarFunc.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionarFunc.Location = new System.Drawing.Point(1096, 22);
             this.btnAdicionarFunc.Name = "btnAdicionarFunc";
@@ -86,6 +86,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.flpFuncionarios);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Funcionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Urban Green";

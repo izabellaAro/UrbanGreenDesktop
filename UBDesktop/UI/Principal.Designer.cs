@@ -51,7 +51,7 @@
             // 
             // btnFuncionarios
             // 
-            this.btnFuncionarios.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnFuncionarios.BackColor = System.Drawing.Color.DarkGreen;
             this.btnFuncionarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFuncionarios.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFuncionarios.ForeColor = System.Drawing.Color.White;
@@ -65,7 +65,7 @@
             // 
             // btnPedidos
             // 
-            this.btnPedidos.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnPedidos.BackColor = System.Drawing.Color.DarkGreen;
             this.btnPedidos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPedidos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.ForeColor = System.Drawing.Color.White;
@@ -95,6 +95,7 @@
             this.ClientSize = new System.Drawing.Size(1250, 571);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
