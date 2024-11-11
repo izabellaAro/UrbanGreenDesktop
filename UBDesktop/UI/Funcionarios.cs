@@ -86,5 +86,13 @@ namespace UBDesktop.UI
             FormNovoFuncionario form = new FormNovoFuncionario(apiService);
             form.ShowDialog();
         }
+
+        private void btnRetornar_Click(object sender, System.EventArgs e)
+        {
+            this.Hide();
+            Principal principal = new Principal(apiService);
+            principal.ShowDialog();
+            this.Close();
+        }
     }
 }

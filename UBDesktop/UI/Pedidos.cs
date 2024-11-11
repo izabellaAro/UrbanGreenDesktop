@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using UBDesktop.API;
 using UBDesktop.Models;
+using UBDesktop.UI;
 
 namespace UBDesktop
 {
@@ -95,5 +96,12 @@ namespace UBDesktop
             return cardPedido;
         }
 
+        private void btnRetornar_Click(object sender, System.EventArgs e)
+        {
+            this.Hide();
+            Principal principal = new Principal(apiService);
+            principal.ShowDialog();
+            this.Close();
+        }
     }
 }

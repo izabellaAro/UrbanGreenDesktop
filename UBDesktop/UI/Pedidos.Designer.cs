@@ -32,6 +32,7 @@
             this.flpPedidos = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRetornar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,12 +70,26 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRetornar
+            // 
+            this.btnRetornar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnRetornar.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetornar.ForeColor = System.Drawing.Color.White;
+            this.btnRetornar.Location = new System.Drawing.Point(1047, 22);
+            this.btnRetornar.Name = "btnRetornar";
+            this.btnRetornar.Size = new System.Drawing.Size(129, 42);
+            this.btnRetornar.TabIndex = 3;
+            this.btnRetornar.Text = "Retornar";
+            this.btnRetornar.UseVisualStyleBackColor = false;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1205, 574);
+            this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flpPedidos);
@@ -93,5 +108,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpPedidos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRetornar;
     }
 }

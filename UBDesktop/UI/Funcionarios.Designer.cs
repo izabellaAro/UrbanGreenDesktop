@@ -33,6 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdicionarFunc = new System.Windows.Forms.Button();
+            this.btnRetornar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,8 @@
             // 
             this.btnAdicionarFunc.BackColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarFunc.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionarFunc.Location = new System.Drawing.Point(1096, 22);
+            this.btnAdicionarFunc.ForeColor = System.Drawing.Color.White;
+            this.btnAdicionarFunc.Location = new System.Drawing.Point(964, 22);
             this.btnAdicionarFunc.Name = "btnAdicionarFunc";
             this.btnAdicionarFunc.Size = new System.Drawing.Size(75, 50);
             this.btnAdicionarFunc.TabIndex = 3;
@@ -77,11 +79,25 @@
             this.btnAdicionarFunc.UseVisualStyleBackColor = false;
             this.btnAdicionarFunc.Click += new System.EventHandler(this.btnAdicionarFunc_Click);
             // 
+            // btnRetornar
+            // 
+            this.btnRetornar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnRetornar.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetornar.ForeColor = System.Drawing.Color.White;
+            this.btnRetornar.Location = new System.Drawing.Point(1045, 22);
+            this.btnRetornar.Name = "btnRetornar";
+            this.btnRetornar.Size = new System.Drawing.Size(126, 49);
+            this.btnRetornar.TabIndex = 4;
+            this.btnRetornar.Text = "Retornar";
+            this.btnRetornar.UseVisualStyleBackColor = false;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
             // Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 574);
+            this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.btnAdicionarFunc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -102,5 +118,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdicionarFunc;
+        private System.Windows.Forms.Button btnRetornar;
     }
 }
